@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+
+
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic|Roboto+Slab|Roboto:400,300,700,400italic' rel='stylesheet' type='text/css'>
+
+        <!-- CSS -->
+            <link rel="stylesheet" href="https://masterodie.github.io/theme/css/style.min.css?bff4f447">
+        <!-- <link rel="stylesheet" href="https://masterodie.github.io/theme/css/main.css" /> -->
+
+        <!-- Favicon -->
+        <link rel="icon" type="img/png" href="https://masterodie.github.io/theme/img/favicon.png" />
+
+        <!-- Feeds -->
+        <title>oBlog</title>
+        <link href="https://masterodie.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="oBlog Full Atom Feed" />
+        <link href="https://masterodie.github.io/feeds/games.atom.xml" type="application/atom+xml" rel="alternate" title="oBlog Categories Atom Feed" />
+
+
+
+<meta name="tags" content="games" />
+<meta name="tags" content="skyrim" />
+<meta name="tags" content="mod organizer" />
+
+    </head>
+    <body id="index" class="home">
+        <nav id="menu">
+            <div class="container">
+                <span id="brand"><a href="https://masterodie.github.io/">oBlog</span>
+                <ul>
+                    <li><a href="https://masterodie.github.io/pages/about-me/"><i class="fa fa-user"></i> About me</a></li>
+                </ul>
+                <ul class="align-right">
+                    <li class="active"><a href="https://masterodie.github.io/posts/"><i class="fa fa-archive"></i> Archives</a></li>
+                </ul>
+            </div>
+        </nav><!-- /#menu -->
+        <header id="banner" class="body">
+            <div class="container">
+                <div class="banner-title">
+                    <h1><a href="https://masterodie.github.io/">oBlog</a></h1>
+                    <strong>statistically irellevant</strong>
+                </div>
+            </div>
+        </header><!-- /#banner -->
+        <div class="container">
+            <div class="row">
+                <div class="eight columns">
+<section id="content" class="body">
+    <header>
+        <h2 class="entry-title">
+            <a href="https://masterodie.github.io/drafts/games/master_dateien_säubern/" rel="bookmark" title="Permalink to Master Dateien Säubern">
+                Master Dateien Säubern
+            </a>
+        </h2>
+        
+    </header>
+    <div class="entry-content">
+        <div class="section" id="vorwort">
+<h2>Vorwort</h2>
+<p>Im letzen <a class="reference external" href="/mod-organizer-installation.html">Artikel</a> habe ich die
+Installation von Mod Organizer beschrieben. Diesen Teil der Anleitung nehme ich
+als Vorrausetzung für das Folgende.</p>
+<p>In diesem Teil der Anleitung wird es darum gehen Die Master Dateien von Skyrim
+zu säubern. Dies trifft allerdings nur zu wenn ihr auch einen DLC für Skyrim
+euer eigen nennt. Wenn keine DLC's vorhanden sein sollten kann man sich diesen
+Schritt sparen, da es hierbei nur um Konflikte geht die entstehen wenn die
+DLC's (oder auch nur einer) installiert sind. Das macht im normalen Spiel ohne
+Mods auch soweit keinerlei Probleme, kann aber da in den DLC's teilweise
+Referenzen auf Items oder Ähnliches sind die identisch sind zu denen im
+Hauptspiel, und wenn dann nur auf die Referenz aus dem Hauptspiel verwiesen
+wird in einem Mod, wird durch das Vorhandensein des DLC's der die selben
+Änderungen enthält wieder überschrieben, was natürlich nicht erwünscht sein
+sollte.</p>
+</div>
+<div class="section" id="installation-von-tesvedit">
+<h2>Installation von TESVEdit</h2>
+<p>Für diesen Schritt benötigen wir ein weiteres Programm auf unserer modding Tool
+Liste: <a class="reference external" href="http://www.nexusmods.com/skyrim/mods/25859">TES5Edit</a>. Mit diesem Tool werden wir uns die leider von Bethesda nicht
+gesäuberten Master Dateien der DLC's vorknöpfen und alles was so stören könnte
+beseitigen.</p>
+<p>Dafür lädt man sich als erstes mal <a class="reference external" href="http://www.nexusmods.com/skyrim/mods/25859">TES5Edit</a> herunter und entpackt es z.B. ins
+Skyrim Verzeichnis direkt neben Mod Organizer. Danach öffnet man Mod Organizer
+und muss diesem erst mal sagen wo TES5Edit zu finden ist um es über Mod
+Organizer zu starten, denn wie wir aus dem letzten Tutorial wissen wird das
+normale Skyrim Data Verzeichnis von Mod Organizer nicht angerührt, ergo sind
+dort auch keine Mods drin die TES5Edit finden könnte wenn man es ohne Mod
+Orgnaizer startet.</p>
+<p>Dazu klickt man oben rechts in Mod Organizer auf das Dropdown Menü über das man
+Programme starten kann, und klickt in diesem auf &quot;Edit...&quot;. Dort trägt man bei
+Name TES5Edit ein und bei dem Pfad den Pfad zu der exe von TES5Edit die ihr
+gerade eben entpackt habt. Wenn das erledigt ist klickt ihr einfach auf OK.</p>
+<p>Nun ist es an der Zeit ein Backup der Originalen Skyrim Master .ESP Dateien zu
+machen, damit man diese nachdem man mit dem säubern wieder an ihren
+angestammten Platz kopieren kann, um das Data Verzeichnis wieder in seinen
+Urzustand zu versetzen. Dazu legt man sich ein Verzeichnis für die Backups an
+und kopiert aus dem Skyrim Data Verzeichnis <tt class="docutils literal">Update.esp, Dawnguard.esp,
+Dragonborn.esp und HearthFires.esp</tt> in dieses Backup Verzeichnis und rührt
+diese Dateien erst mal nicht mehr an.</p>
+<p>Wenn das Backup erstellt wurde kann man auch endlich mit der Arbeit beginnen.</p>
+</div>
+<div class="section" id="saubern-der-master-dateien">
+<h2>Säubern der Master Dateien</h2>
+<p>Wenn man Alles installiert hat und TES5Edit aus Mod Organizer heraus starten
+kann, startet man TES5Edit. Dieses wird kurz nach dem Start eine liste von
+installierten *.ESP Dateien anzeigen. In dieser Liste macht man als erstes mal
+einen rechtsklick und in dem Kontext Menü wählt man &quot;Select None&quot;, wenn nichts
+mehr ausgewählt ist klickt man als erstes einfach nur auf Update.esp, so das
+nur ein Haken links neben der Update.esp ist, und auch nur dort. Danach
+bestätigt man mit dem OK Knopf unten und wartet erst mal einen kurzen Moment
+bis TES5Edit alles eingelesen hat.</p>
+<p>Wenn der Einlesevorgang beendet ist kann man nun in der linken hälfte vom
+Fenster rechts auf die Update.esp einenghlen. Nachdem man das getan hat wird TES5Edit wieder
+einen Moment brauchen um die Filter zum säubern zu berechnen. Wenn der Vorgang
+abgeschlossen ist klickt man wieder rechts auf die Update.esp und danach auf
+&quot;Remove Identical to Master Records&quot;. Das sind die vorhin erwähnten Referenzen
+die beim Modden probleme machen könnten. Im rechten Fenster sollte nun
+irgendwas von &quot;Cleaned XY references&quot; stehen.</p>
+<p>Nachdem das erledigt ist bleibt noch ein Schritt für die Update.esm zu tun, und
+das wäre noch einmal rechts drauf zu klicken und diesmal &quot;Undelete and disable
+references&quot; zu klicken. Das stellt gelöschte Referenzen wieder her und
+deaktiviert diese, damit dadurch keine Probleme entstehen.</p>
+<p>Diese Schritte wiederholt man jetzt für die anderen DLC's genau so. Also noch
+mal in kurz:</p>
+<ul class="simple">
+<li>Alle *.ESP Dateien deaktivieren in TES5Edit</li>
+<li>Nur die *.ESP anhaken die man bearbeiten will</li>
+<li>Rechts auf die zu bearbeitende *.ESP klicken und &quot;Apply Filter for cleaning&quot;
+klicken</li>
+<li>Rechts auf die zu bearbeitende *.ESP klicken und &quot;Remove Identical to Master
+Records&quot; klicken</li>
+<li>Rechts auf die zu bearbeitende *.ESP klicken und &quot;Undelete and disable
+References&quot; klicken</li>
+</ul>
+</div>
+<div class="section" id="data-verzeichnis-in-urzustand-versetzen">
+<h2>Data Verzeichnis in Urzustand versetzen</h2>
+<p>Nachdem das erledigt ist bleibt nur noch das Data Verzeichnis von Skyrim wieder
+in den Urzustand zu bringen. Dazu öffnet man erst mal das Mod Organizer
+Verzeichnis und darin das Unterverzeichnis Mods. Darin erstellt man sich für
+jeden DLC und die Update.esm einen Ordner</p>
+<ul class="simple">
+<li>Update_CLEANED</li>
+<li>Dawnguard_CLEANED</li>
+<li>Dragonborn_CLEANED</li>
+<li>HeathFires_CLEANED</li>
+</ul>
+<p>In die jeweiligen Ordner verschiebt man die *.ESP Dateien aus dem Skyrim Data
+Verzeichnis und verschiebt die Dateien aus dem Backup Ordner den wir vor der
+Installation angelegt haben wider an Ort und Stelle ins Skyrim Data
+Verzeichnis.</p>
+</div>
+<div class="section" id="abschliessendes">
+<h2>Abschliessendes</h2>
+<p>Wenn das alles erledigt ist startet man Mod Organizer (oder startet Mod
+Organizer neu wenn es am laufen war), und verschiebt die nun in der linken Mod
+Liste auftauchenden neuen Ordner mit dem _CLEANED Suffix unter ihre jeweiligen
+Originale von Skyrim, und aktiviert diese indem man einfach die Haken setzt.</p>
+<p>Damit hätte man die Skyrim Master Dateien gesäubert und kann mit weiterem
+Modding fortfahren.</p>
+</div>
+
+    </div><!-- /.entry-content -->
+    <footer class="post-info">
+        <span class="date published" title="2016-02-01T00:00:00+01:00">
+            Mo 01 Februar 2016
+        </span>
+    </footer><!-- /.post-info -->
+</section>
+                </div>
+                <div class="four columns">
+                        <div id="about-me">
+                            <img class="figure" src=http://www.gravatar.com/avatar/907f69666efdf98e0332bc6ae9238d2f?size=250 alt="avatar" />
+                            <h5>About Patrick N. (odie)</h5>
+                            <p><ul class="list-unstyled"><li>Steinmetz</li><li>Gamer</li></ul></p>
+                        </div>
+                        <h5>Links</h5>
+                        <ul id="blogroll" class="list-unstyled">
+                            <li><a href="http://gajacraft.com/" title="gajaCraft">gajaCraft</a></li>
+                        </ul>
+                        <h5>Social</h5>
+                        <ul id="social" class="list-unstyled">
+                            <li><a href="https://twitter.com/masterodie/" title="twitter"><i class="fa fa-twitter"></i> twitter</a></li>
+                            <li><a href="https://github.com/masterodie/" title="github"><i class="fa fa-github"></i> github</a></li>
+                            <li><a href="https://alpha.app.net/odie/" title="app.net"><i class="fa fa-adn"></i> app.net</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+            </div>
+        </footer><!-- /#contentinfo -->
+    </body>
+</html>
