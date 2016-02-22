@@ -14,16 +14,14 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic|Roboto+Slab|Roboto:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
         <!-- CSS -->
-            <link rel="stylesheet" href="https://masterodie.github.io/theme/css/style.min.css?bff4f447">
-        <!-- <link rel="stylesheet" href="https://masterodie.github.io/theme/css/main.css" /> -->
+            <link rel="stylesheet" href="/theme/css/style.min.css?bff4f447">
+        <!-- <link rel="stylesheet" href="/theme/css/main.css" /> -->
 
         <!-- Favicon -->
-        <link rel="icon" type="img/png" href="https://masterodie.github.io/theme/img/favicon.png" />
+        <link rel="icon" type="img/png" href="/theme/img/favicon.png" />
 
         <!-- Feeds -->
         <title>oBlog</title>
-        <link href="https://masterodie.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="oBlog Full Atom Feed" />
-        <link href="https://masterodie.github.io/feeds/games.atom.xml" type="application/atom+xml" rel="alternate" title="oBlog Categories Atom Feed" />
 
 
 
@@ -35,19 +33,19 @@
     <body id="index" class="home">
         <nav id="menu">
             <div class="container">
-                <span id="brand"><a href="https://masterodie.github.io/">oBlog</span>
+                <span id="brand"><a href="/">oBlog</span>
                 <ul>
-                    <li><a href="https://masterodie.github.io/pages/about-me/"><i class="fa fa-user"></i> About me</a></li>
+                    <li><a href="/pages/about-me/"><i class="fa fa-user"></i> About me</a></li>
                 </ul>
                 <ul class="align-right">
-                    <li class="active"><a href="https://masterodie.github.io/posts/"><i class="fa fa-archive"></i> Archives</a></li>
+                    <li class="active"><a href="/posts/"><i class="fa fa-archive"></i> Archives</a></li>
                 </ul>
             </div>
         </nav><!-- /#menu -->
         <header id="banner" class="body">
             <div class="container">
                 <div class="banner-title">
-                    <h1><a href="https://masterodie.github.io/">oBlog</a></h1>
+                    <h1><a href="/">oBlog</a></h1>
                     <strong>statistically irellevant</strong>
                 </div>
             </div>
@@ -58,7 +56,7 @@
 <section id="content" class="body">
     <header>
         <h2 class="entry-title">
-            <a href="https://masterodie.github.io/drafts/games/mod_organizer_installation/" rel="bookmark" title="Permalink to Mod Organizer Installation">
+            <a href="/drafts/games/mod_organizer_installation/" rel="bookmark" title="Permalink to Mod Organizer Installation">
                 Mod Organizer Installation
             </a>
         </h2>
@@ -67,31 +65,31 @@
     <div class="entry-content">
         <div class="section" id="vorwort">
 <h2>Vorwort</h2>
-<p><a class="reference external" href="http://www.nexusmods.com/skyrim/mods/1334">Mod Organizer</a> ist ein Tool zum verwalten von Mods für Spiele wie Fallout 3,
-Fallout New Vegas, The Elder Scrolls IV - Oblivion und The Elder Scrolls V -
-Skyrim. Es hat einige Vorteile gegenüber dem sonst üblicherweise verwendeten
-<a class="reference external" href="http://www.nexusmods.com/games/mods/modmanager">Nexus Mod Manager</a>, ist allerdings auch etwas komplizierter zu benutze.
-Allerdings lohnt sich die etwas längere Einarbeitungszeit die man für Mod Organizer
-brauch wenn man z.B. mehrere Profile für verschiedene Mod Konfigurationen haben
-will (z.B. ein Profil zum normalen Spielen und eins mit vielen Grafik Mods für
-Screenshots, oder für verschiedene Overhaul Mods die man gleichzeitig spielen
-will). Diese Möglichkeit bietet Nexus Mod Manager zwar auch seit kurzem, allerdings ist
-dies dort nicht ganz so praktisch gelöst wir bei Mod Organizer.</p>
 <div class="figure align-left">
-<a class="reference external image-reference" href="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/00.jpg"><img alt="Mod Organizer" src="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/00.jpg" /></a>
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_first_start.png"><img alt="Mod Organizer Fist Start" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_first_start.png" /></a>
 </div>
+<p><a class="reference external" href="http://www.nexusmods.com/skyrim/mods/1334">Mod Organizer</a> ist ein Tool zum verwalten von Mods für Spiele wie Fallout 3,
+Fallout New Vegas, The Elder Scrolls IV - Oblivion und The Elder Scrolls V - Skyrim. Es hat einige Vorteile gegenüber dem sonst
+üblicherweise verwendeten <a class="reference external" href="http://www.nexusmods.com/games/mods/modmanager">Nexus Mod Manager</a>, ist allerdings auch etwas
+komplizierter zu benutze.  Allerdings lohnt sich die etwas längere
+Einarbeitungszeit die man für Mod Organizer braucht wenn man z.B. mehrere Profile für
+verschiedene Mod Konfigurationen haben will (z.B. ein Profil zum normalen
+Spielen und eins mit vielen Grafik Mods für Screenshots, oder für verschiedene
+Overhaul Mods die man gleichzeitig spielen will). Diese Möglichkeit bietet
+Nexus Mod Manager zwar auch seit kurzem, allerdings ist dies dort nicht ganz so praktisch
+gelöst wir bei Mod Organizer.</p>
 <p>Dies ist der Fall durch die Art und Weise in der Mod Organizer Mods intern
 verwaltet. Mod Organizer legt für jeden Mod den man installiert in einem von
 Mod Organizer verwalteten Verzeichnis ein eigenes Unterverzeichnis an, dessen Inhalt
 erst beim starten eines Programmes über das Mod Organizer Interface in das
-Data Verzeichis des jeweiligen Spieles zur verfügung stellt.  Das bedeutet man
+Data Verzeichnis des jeweiligen Spieles zur Verfügung stellt.  Das bedeutet man
 muss beim installieren von Mods nie mehr drauf achten welcher Mod welche
 Dateien von anderen Mods überschreibt, dies wird intern von Mod Organizer so gelöst das
 es etwas ähnliches wie die Load Order von Fallout 3, Fallout New Vegas, The Elder Scrolls IV - Oblivion oder The Elder Scrolls V - Skyrim.
-Das heisst man kann die installierten Mods im Interface beliebig hin und her
+Das heißt man kann die installierten Mods im Interface beliebig hin und her
 sortieren wie man das auch mit den von Mods installierten *.ESP Dateien kennt,
 Mods die eine höhere Priorität in dieser zweiten Load Order haben werden dann
-bevorzugt behandelt und Dateien dieser Mods werden in der Standart Einstellung
+bevorzugt behandelt und Dateien dieser Mods werden in der Standard Einstellung
 im Data Verzeichnis vom Spiel landen und genutzt werden.  Dieses Verhalten kann
 man allerdings auch pro Mod pro Datei noch mal einstellen, so das man jegliche
 Freiheiten hat welche Dateien denn letztendlich vom Spiel geladen werden. Das
@@ -99,7 +97,7 @@ alles macht <a class="reference external" href="http://www.nexusmods.com/skyrim/
 werden lässt.</p>
 <p>Das bedeutet auch das, dass Data Verzeichnis mit Mod Organizer nicht verändert wird, und
 man dieses auch im Urzustand belasse kann, auch wenn man z.B. die Master
-Dateien von DLC's säubert oder ähnliches. Somit kann mann trotz allem immer
+Dateien von DLC's säubert oder ähnliches. Somit kann man trotz allem immer
 noch mit Steam die lokalen Dateien auf Fehler überprüfen, und muss nicht jedes
 mal danach wieder alle Änderungen an den Master Dateien durchführen muss.</p>
 </div>
@@ -107,7 +105,7 @@ mal danach wieder alle Änderungen an den Master Dateien durchführen muss.</p>
 <h2>Installation</h2>
 <p>Für Mod Organizer gibt es 2 mögliche Arten der Installation. Einmal kann
 Mod Organizer global im System installiert werden und für jedes installierte Spiel wird
-im Benuter Verzeichnis ein Unterverzeichnis angelegt in dem Mods und
+im Benutzer Verzeichnis ein Unterverzeichnis angelegt in dem Mods und
 Einstellungen für das jeweilige Spiel gespeichert werden.  Alternativ kann man
 für jedes Spiel das man installiert hat eine separate Installation von Mod Organizer
 anlegen. Da werden die Mods in einem Unterverzeichnis von Mod Organizer abgelegt.
@@ -115,7 +113,7 @@ Letzteres ist die von mir favorisierte Methode.</p>
 <div class="section" id="globale-installation">
 <h3>Globale Installation</h3>
 <div class="figure align-right">
-<a class="reference external image-reference" href="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/01.jpg"><img alt="Mod Organizer Installer Download" src="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/01.jpg" /></a>
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_download_installer.png"><img alt="Mod Organizer Installer Download" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_download_installer.png" /></a>
 <p class="caption">Mod Organizer Installer</p>
 </div>
 <p>Dazu lädt man sich einfach von <a class="reference external" href="http://www.nexusmods.com">Nexus Mods</a> die aktuelle Installer Version von
@@ -126,16 +124,16 @@ Dort wählt man einfach global.</p>
 <div class="section" id="installation-pro-spiel">
 <h3>Installation pro Spiel</h3>
 <div class="figure align-left">
-<a class="reference external image-reference" href="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/02.jpg"><img alt="Mod Organizer Regulär Download" src="https://masterodie.github.io/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/02.jpg" /></a>
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_download_manual.png"><img alt="Mod Organizer Regulär Download" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_download_manual.png" /></a>
 <p class="caption">Mod Organizer Regulär</p>
 </div>
-<p>Dazu lädt man sich von <a class="reference external" href="http://www.nexusmods.com">Nexus Mods</a> die Version von Mod Organizer runter die
-nicht Installer im Namen hat und entpackt diese z.B. in ein Unterverzeichnis
-von jeweiligen Spiel. (z.B. <tt class="docutils literal">[Skyrim <span class="pre">Verzeichnis]\ModOrganizer</span></tt> ). Beim ersten
-start sollte eigentich in diesem Fall keine Frage kommen welchen Installation
+<p>Dazu lädt man sich von <a class="reference external" href="http://www.nexusmods.com">Nexus Mods</a> die Version von Mod Organizer runter die nicht
+Installer im Namen hat und entpackt diese z.B. in ein Unterverzeichnis von
+jeweiligen Spiel. (z.B. <tt class="docutils literal">[Skyrim <span class="pre">Verzeichnis]\ModOrganizer</span></tt> ). Beim ersten
+Start sollte eigentlich in diesem Fall keine Frage kommen welchen Installation
 Typ man denn gerne hätte. Falls diese doch kommt wählt man da einfach die
-manuelle methode aus und danach ist man schon fast s
-oweit das man Mods installieren kann.</p>
+manuelle Methode aus und danach ist man schon fast soweit das man Mods
+installieren kann.</p>
 </div>
 </div>
 <div class="section" id="ersteinrichtung">
@@ -150,27 +148,42 @@ an die neue Stelle verschieben oder alles neu installieren.</p>
 </div>
 <div class="section" id="das-benuzer-interface">
 <h2>Das Benuzer Interface</h2>
+<div class="figure align-left">
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_first_start_status_indicator.png"><img alt="Mod Organizer Fist Start" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_first_start_status_indicator.png" /></a>
+</div>
 <p>Nachdem man die Einrichtung beendet hat sollte man sich erst einmal das
 Benutzerinterface von Mod Organizer genauer anschauen. Die Leiste oben am Rand
 beinhaltet auf der linken Seite Knöpfe um Mods zu importieren, oder um
 Einstellungen an Mod Organizer selber vorzunehmen. Auf der rechten Seite findet man
 eine Update Benachrichtigung und was viel wichtiger ist eine Fehleranzeige.
-wenn diese nicht ausgegraut ist und eine Zahl daneben steht ist möglicherweise
-irgenwas im argen und man sollte sich diese Fehlermeldung auf einen klick auf
+Wenn diese nicht ausgegraut ist und eine Zahl daneben steht ist möglicherweise
+irgendwas im argen und man sollte sich diese Fehlermeldung auf einen klick auf
 das Symbol mit dem Ausrufezeichen anzeigen lassen.</p>
+<div class="figure align-right">
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_first_start_mod_list.png"><img alt="Mod Organizer Fist Start" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_first_start_mod_list.png" /></a>
+</div>
 <p>Weiter ist unten links das grosse Fenster die Liste mit allen installierten
-Mods im Mods Verzeichnis von Mod Organizer Dies können von Mod Organizer
-verwaltete Dateien sein oder nicht von Mod Organizer verwaltete Dateien sein. Dateien
-die Skyrim selber mitbringt fallen zum Beispiel unter die letzte Kategorie,
-und alles was man so mit Mod Organizer herunter lädt und verwaltet und die erste. Die
-Einträge hier kann man sortieren und alles was tiefer in der Liste steht
-solange nach Priotität sortiert ist wird von Skyrim bevorzugt vor Einträgen die
-höher in der Liste sind Behandelt. Also Dateien von Mods mit höherer Priorität
-landen letztendelich im Data Verzeichnis von Skyrim wenn man ein Programm über
-Mod Organizer startet.</p>
+Mods im Mods Verzeichnis von Mod Organizer Dies können von Mod Organizer verwaltete Dateien sein
+oder nicht von Mod Organizer verwaltete Dateien sein. Dateien die Skyrim selber
+mitbringt fallen zum Beispiel unter die letzte Kategorie, und alles was man so
+mit Mod Organizer herunter lädt und verwaltet und die erste. Beim ersten Start von Mod Organizer
+befinden sich dort nur die DLC's falls vorhanden. Die Einträge hier kann man
+sortieren und alles was tiefer in der Liste steht solange nach Priorität
+sortiert ist wird von Skyrim bevorzugt vor Einträgen die höher in der Liste
+sind Behandelt. Also Dateien von Mods mit höherer Priorität landen letztendlich
+im Data Verzeichnis von Skyrim wenn man ein Programm über Mod Organizer startet.</p>
+<div class="figure align-left">
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_first_start_app_launcher.png"><img alt="Mod Organizer Fist Start" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_first_start_app_launcher.png" /></a>
+</div>
 <p>Rechts neben dieser Liste befindet sich oben die Dropdown Liste der Programme
 die Mod Organizer kennt, und daneben der Start Knopf, der das jeweils ausgewählt
-Programm startet. Darunter befindet sich eine Liste mit der Load Order für die
+Programm startet. In diesem Menü befindet sich auch ein Menü Punkt mit dem man
+manuell neue Programme hinzufügen kann die über Mod Organizer gestartet werden können.
+Dazu zählen z.B. TES5Edit oder SkyProc Patcher.</p>
+<div class="figure align-right">
+<a class="reference external image-reference" href="/images/games/skyrim/mod_organizer_installation/mod_organizer_first_start_plugin_list.png"><img alt="Mod Organizer Fist Start" src="/images/games/skyrim/mod_organizer_installation/thumbnails/&#x27;200x_&#x27;/mod_organizer_first_start_plugin_list.png" /></a>
+</div>
+<p>Unter dem App Launcher befindet sich eine Liste mit der Load Order für die
 *.ESP Dateien von Skyrim. Diese kann man auch manuell sortieren oder aber über
 den Knopf über der Liste mit einer eingebauten Version von <a class="reference external" href="http://loot.github.io">LOOT</a> sortieren
 lassen kann. Hier kann man auch über verschiedene Reiter auf andere Funktionen
@@ -182,7 +195,7 @@ Dateien und man kann darüber auch den Mod installieren.</p>
 <h2>Schlusswort</h2>
 <p>Da dieser Artikel nun doch schon relativ lang geworden ist habe ich mich
 entschlossen aus der Installationsanleitung eine Artikel Serie zu machen.
-Weiter gehts dann hier mit dem <a class="reference external" href="/skyrim-master-dateien-saeubern.html">säubern der Master Dateien von Skyrim</a></p>
+Weiter geht es dann hier mit dem <a class="reference external" href="/skyrim-master-dateien-saeubern.html">säubern der Master Dateien von Skyrim</a></p>
 </div>
 
     </div><!-- /.entry-content -->
@@ -195,7 +208,7 @@ Weiter gehts dann hier mit dem <a class="reference external" href="/skyrim-maste
                 </div>
                 <div class="four columns">
                         <div id="about-me">
-                            <img class="figure" src=http://www.gravatar.com/avatar/907f69666efdf98e0332bc6ae9238d2f?size=250 alt="avatar" />
+                            <img class="figure" src=https://secure.gravatar.com/avatar/907f69666efdf98e0332bc6ae9238d2f?size=250 alt="avatar" />
                             <h5>About Patrick N. (odie)</h5>
                             <p><ul class="list-unstyled"><li>Steinmetz</li><li>Gamer</li></ul></p>
                         </div>
